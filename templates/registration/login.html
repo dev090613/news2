@@ -3,6 +3,7 @@
 
 {% block title%}Log In{% endblock title%}
 
+
 {% block content %}
 
 <h2>Log In</h2>
@@ -10,5 +11,7 @@
   {{ form | crispy }}
   <button class="btn btn-success ms-2" type="submit">Log In</button>
 </form>
+
+<a href="{% url 'password_reset' %}">Forgot Your Password?</a>
 
 {% endblock content %}
